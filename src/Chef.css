@@ -1,4 +1,4 @@
-* {
+* , body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -55,7 +55,6 @@ button:hover {
 .ingredientList {
     margin-bottom: 30px;
     padding: 20px;
-    background-color: #1D1D1F;
     height: 50vh;
     
 }
@@ -98,7 +97,7 @@ button:hover {
 }
 .results{
     background: #818181;
-    color: #0E0E12;
+    color: #0a0a0a;
     margin-top: 30px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: left;
@@ -116,14 +115,16 @@ button:hover {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px 0;
     text-align: center;
-    
+    color: #414040;
 }
 ul, ol{
     padding: 0 50px;
+    color: #414040;
 }
 h4 {
     font-weight: bolder;
     padding-left: 25px;
+    color: #414040;
 }
 .usedIngr ul li {
     
