@@ -3,6 +3,7 @@ import sampleRecipe from "./sampleRecipe.json"
 import "./Chef.css"
 import recipeBg from "./assets/ingrBackground.png"
 import recipeBg3 from "./assets/ingrBg3.avif"
+import Footer from "./typingComponents/footer"
 
 export default function Chef(){
     const [ingr, setIngr] = useState('')
@@ -135,7 +136,9 @@ export default function Chef(){
                                     </ol>
                                 </div>
                             </section>}
+                            
                     </article>:null}
+             
         </main>
     )
 }

@@ -1,3 +1,4 @@
+
 * , body{
     box-sizing: border-box;
     margin: 0;
@@ -6,14 +7,23 @@
 .heroContainer {
     height: max-content;
     padding-bottom: 20px;
-    background-color:#0E0E12;    
+    background: #fef9f4;
+    height: 90vh;  
 }
 .chefHero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: "Nunito", sans-serif;
     font-weight: 2000;
     font-size: 1.2rem;
-    color: #ffffff;
+    color: #111111;
     height: 100vh;
+    background-image: url("./assets/ingrBg3.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .chefHero header{
@@ -23,183 +33,173 @@
     line-height: 5rem;
     padding: 60px;
     font-weight: 500;
-    
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
-@media (min-width: 420px){
-    .chefHero header{
-        font-size: 6rem;
-        line-height:6rem ;
-    }
+.heroRight {
+    display: flex;
+    flex-direction: column;  
+    width: 100%;  
+    max-width: 500px ; 
 }
-@media (min-width: 750px){
-    .chefHero header{
-        font-size: 7rem;
-        line-height:8rem ;
-    }
-}
-@media (min-width: 850px){
-    .chefHero header{
-        font-size: 9rem;
-        line-height:8rem ;
-    }
-}
-
-
-@media (min-width: 1024px){
-    .chefHero{
-        display: flex;
-        align-items: flex-start;
-        padding-right: 70px;
-    }
-    .chefHero header{
-        font-size: 11rem;
-        letter-spacing: -1rem;
-        line-height:10rem;
-        width: 50%;
-        padding-top: 150px;
-    }
-    .heroRight {
-        display: flex;
-        flex-direction: column;  
-        width: 100%;  
-        padding-top: 300px; 
-    }
-}
-@media (min-width: 1200px){
-    .chefHero header{
-        font-size: 13rem;
-        line-height: 12rem;
-    }
-}
-.chefHero p {
-    font-size: 0.7rem;
-}
-@media (min-width: 420px){
-    .chefHero p{
-        font-size: 0.8rem;
-        ;
-    }
-}
-@media (min-width: 750px){
-    .chefHero p{
-        font-size: 1rem;
-    }
-}
-.chefHero form input {
-    max-width: 200px;
-}
-.chefHero form input, button {
-    font-family: "Nunito", sans-serif;;
+.heroRight p {
+    font-size: 0.8rem;
+    color: #d2691e;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
 }
 form {
     display: flex;
-    flex-direction: column;
-    margin: 0 30px;
+    flex-direction: row;
+    margin: 0;
     gap: 20px;
     align-items: center;
+    justify-content: center;
     margin-top: 30px;
 }
 .input {
-    width: 50%;
     height: 30px;
     background-color: #0E0E12;
-    padding-left: 10px;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
 }
 button {
-    height: 30px;
+    height: 35px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    background-color: #148761;
-    padding: 0 10px;
+    padding: 0 0.5rem;
+    background: linear-gradient(135deg, #f7b733, #fc4a1a);
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
+
 button:hover {
-    background-color:#338b6f;
+    transform: scale(1.05);
 }
-.ingredientList {
-    padding: 0;
-    height: 50vh;
+
+@media (min-width: 420px){
+    .chefHero header{
+        font-size: 4.5rem;
+        max-width: 350px;
+    }
+    .chefHero p{
+        font-size: 0.8rem;
+    }
+}
+@media (min-width: 768px){
+    .chefHero header{
+        font-size: 5rem;
+    }
+}
+@media (min-width: 1024px){
+    .chefHero {
+        flex-direction: row;    
+        padding: 6rem 8rem;
+        gap: 0rem;
+    }
+    .chefHero header{
+        font-size: 7rem;
+        letter-spacing: -1rem;
+        line-height:8rem;
+        padding: 110px;
+        
+    }
+    .heroRight {
+        padding:80px 80px 0 0;   
+  }
+}
+@media (min-width: 1200px){
+    .chefHero {
+        gap: 5rem;
+    }
+    .chefHero header{
+        font-size: 9rem;
+        line-height: 10rem;
+    }
     
 }
+.ingredientList {
+    background: #fef9f4; 
+    border: 2px solid #d7b899; 
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 7rem auto;
+    max-width: 600px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    min-height: 250px;
+}
+
 .ingredientList header {
-    color:  #308D46;
-    font-size: 1rem;
+    opacity: 0.7;
+    color: #7c4f29; /* dark brown */
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
     font-weight: 900;
     text-decoration: underline;
-    font-family: "Playwrite AU QLD";
-    border-radius: 5px;
+    font-family: "Nunito" ,sans-serif;
+    border-radius: 20px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5)
 }
 .list {
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    padding: 20px 20px;
+    display: flex;    
+    gap: 50px;
     width: 100%;
     max-height: 250px;
     flex-wrap: wrap;
-    line-height: 0.01rem;
-    width: 50%;
-    margin: 0 auto; 
+    line-height: 0.01rem;  
     
-}
-@media (min-width: 420px){
-    .list{
-       padding: 20px 20px;
-    }
 }
 
 .listItem {
+    background: #f7e2d2; 
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;   
+    border: 1px solid #e0c5a1;   
+    color: #4a3221; 
+    font-size: .8rem; 
     
-    font-family: "Playwrite AU QLD";
-    
 }
-.ingredientList p {    
-    text-align: left; 
-    color: #BEBEC2;
-    font-size: 0.7rem; 
-}
-.ingredientList p::before{
-    content: "*";
-    padding: 10px;
-}
+
+
 .submitBtn {
-    margin-top: 20px;
+    margin: 20px;
 }
 .results{
-    background: #818181;
-    color: #0a0a0a;
-    margin-top: 100px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fffaf5;
+    font-family: 'Nunito', sans-serif;
     text-align: left;
-    border-top-left-radius: 10ch;
-    border-bottom-right-radius: 10ch;
+    border: 2px solid #c7a27c;
+    border-radius: 12px;
+    padding: 1.2rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5)
 }
 .results header {
-    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
     font-weight: 900;
     padding: 30px 0 0 30px;
     opacity: 0.7;
+    color: #7c4f29;
 }
 .recipeTitle {
-    text-decoration: underline;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px 0;
+    font-size: 1.4rem;
+    font-weight: bold;
     text-align: center;
-    color: #414040;
+    color: #d2691e;
+    opacity: 0.7;
+    margin: 0.5rem 0 1rem
 }
 ul, ol{
-    padding: 0 50px;
-    color: #414040;
+     padding-left: 1.2rem;
+    line-height: 1.5;
+    color: #6b3e1e;;
 }
 h4 {
-    font-weight: bolder;
-    padding-left: 25px;
-    color: #414040;
-}
-.usedIngr ul li {
+    color: #6b3e1e; /* chocolate brown */
+    margin-bottom: 0.4rem;
     
-    line-height: 1em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .instructions {
     padding: 30px 0;

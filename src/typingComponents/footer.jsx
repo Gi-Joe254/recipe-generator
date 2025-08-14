@@ -1,7 +1,7 @@
-export default function Footer(props){
+export default function Footer(){
     
     
     return(
-        <section style={{height:'500px'}} ref={props.ref} className="footer">footer here</section>
+        <section style={{height:'500px'}} className="footer">footer here</section>
     )
 }
