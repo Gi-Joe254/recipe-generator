@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react"
 import sampleRecipe from "./sampleRecipe.json"
-//import "./Chef.css"
+import "./Chef.css"
 import recipeBg from "./assets/ingrBackground.png"
 import recipeBg3 from "./assets/ingrBg3.avif"
 
