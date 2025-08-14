@@ -72,6 +72,7 @@ export default function Chef(){
         backgroundRepeat : 'no-repeat',
         backgroundPosition : 'center',
         opacity : "0.4",
+        
         border: '1px solid black', 
         
         }
