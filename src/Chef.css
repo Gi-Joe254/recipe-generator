@@ -23,6 +23,7 @@
     line-height: 5rem;
     padding: 60px;
     font-weight: 500;
+    
 }
 @media (min-width: 420px){
     .chefHero header{
@@ -34,6 +35,40 @@
     .chefHero header{
         font-size: 7rem;
         line-height:8rem ;
+    }
+}
+@media (min-width: 850px){
+    .chefHero header{
+        font-size: 9rem;
+        line-height:8rem ;
+    }
+}
+
+
+@media (min-width: 1024px){
+    .chefHero{
+        display: flex;
+        align-items: flex-start;
+        padding-right: 70px;
+    }
+    .chefHero header{
+        font-size: 11rem;
+        letter-spacing: -1rem;
+        line-height:10rem;
+        width: 50%;
+        padding-top: 150px;
+    }
+    .heroRight {
+        display: flex;
+        flex-direction: column;  
+        width: 100%;  
+        padding-top: 300px; 
+    }
+}
+@media (min-width: 1200px){
+    .chefHero header{
+        font-size: 13rem;
+        line-height: 12rem;
     }
 }
 .chefHero p {
@@ -49,6 +84,9 @@
     .chefHero p{
         font-size: 1rem;
     }
+}
+.chefHero form input {
+    max-width: 200px;
 }
 .chefHero form input, button {
     font-family: "Nunito", sans-serif;;
@@ -79,9 +117,8 @@ button:hover {
     background-color:#338b6f;
 }
 .ingredientList {
-    margin-bottom: 30px;
-    padding: 35px 20px;
-    height: 70vh;
+    padding: 0;
+    height: 50vh;
     
 }
 .ingredientList header {
@@ -93,19 +130,24 @@ button:hover {
     border-radius: 5px;
 }
 .list {
-    padding: 20px 20px;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
-    background: red;
     gap: 20px;
     width: 100%;
     max-height: 250px;
     flex-wrap: wrap;
     line-height: 0.01rem;
-
+    width: 50%;
     margin: 0 auto; 
     
 }
+@media (min-width: 420px){
+    .list{
+       padding: 20px 20px;
+    }
+}
+
 .listItem {
     
     font-family: "Playwrite AU QLD";
@@ -114,11 +156,14 @@ button:hover {
 .ingredientList p {    
     text-align: left; 
     color: #BEBEC2;
-    font-size: 0.8rem; 
+    font-size: 0.7rem; 
 }
 .ingredientList p::before{
-    content: "-";
+    content: "*";
     padding: 10px;
+}
+.submitBtn {
+    margin-top: 20px;
 }
 .results{
     background: #818181;

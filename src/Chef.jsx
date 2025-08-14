@@ -16,7 +16,7 @@ export default function Chef(){
         setIngr('')
     }
     useEffect (()=> {
-        ingrList.length >1 && ingrRef.current.scrollIntoView()
+        ingrList.length >=1 && ingrRef.current.scrollIntoView()
     },[ingrList])
 
     const inputRef= useRef(null) 
@@ -65,24 +65,15 @@ export default function Chef(){
     },[recipe])
 
 
-    const background = {
-        position : "absolute",
-        inset : "0",
-        backgroundImage : `url(${recipeBg3})`,
-        backgroundSize : 'cover',
-        backgroundRepeat : 'no-repeat',
-        backgroundPosition : 'center',
-        opacity : "0.4",
-        border: '1px solid black', 
-        
-        }
+    
     return(
         <main>
             <section className="heroContainer">
                 <article className="chefHero">
                     <header>Online Chef</header>
-                    <p>Add ingredients and submit to the Chef for a recipe</p>
-                    <form action={addIngr}>
+                    <div className="heroRight">
+                        <p>Add ingredients and submit to the Chef for a recipe</p>
+                        <form action={addIngr}>
                         <input
                             
                             ref={inputRef}
@@ -97,7 +88,8 @@ export default function Chef(){
                         >
                             Add Ingredient
                         </button>
-                    </form>
+                        </form>
+                    </div>
                 </article>
             </section >
                 {ingrList.length >= 1 ?
@@ -114,17 +106,14 @@ export default function Chef(){
                             {ingrList.map(item => 
                                 <p className="listItem">{item}</p>)
                             }
-                        </div>
-                        <div
-                            style={background}>
-                        </div>               
+                        </div>             
                     </article>:null
                 }
                               
                 
                 {ingrList.length > 3 ? 
                     <article className="recipe" >
-                        <button onClick={getRecipe}>Submit to Chef</button>
+                        <button className="submitBtn" onClick={getRecipe}>Submit to Chef</button>
                         {recipe && 
                             <section className="results" ref={resultsRef}>
                                 <header>Chef's Recipe:</header>
