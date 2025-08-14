@@ -6,24 +6,50 @@
 .heroContainer {
     height: max-content;
     padding-bottom: 20px;
-    background-color:#0E0E12;
-    
+    background-color:#0E0E12;    
 }
 .chefHero{
     font-family: "Nunito", sans-serif;
     font-weight: 2000;
     font-size: 1.2rem;
     color: #ffffff;
-    height: 80vh;
-}
-.chefHero header{
-    font-size: 6rem;
-    color: #a18247;
-    font-family:'Courier New', Courier, monospace;
-    line-height: 6rem;
-    padding: 60px;
+    height: 100vh;
 }
 
+.chefHero header{
+    font-size: 4rem;
+    color: #a18247;
+    font-family:'Courier New', Courier, monospace;
+    line-height: 5rem;
+    padding: 60px;
+    font-weight: 500;
+}
+@media (min-width: 420px){
+    .chefHero header{
+        font-size: 6rem;
+        line-height:6rem ;
+    }
+}
+@media (min-width: 750px){
+    .chefHero header{
+        font-size: 7rem;
+        line-height:8rem ;
+    }
+}
+.chefHero p {
+    font-size: 0.7rem;
+}
+@media (min-width: 420px){
+    .chefHero p{
+        font-size: 0.8rem;
+        ;
+    }
+}
+@media (min-width: 750px){
+    .chefHero p{
+        font-size: 1rem;
+    }
+}
 .chefHero form input, button {
     font-family: "Nunito", sans-serif;;
 }
@@ -54,25 +80,25 @@ button:hover {
 }
 .ingredientList {
     margin-bottom: 30px;
-    padding: 20px;
-    height: 50vh;
+    padding: 35px 20px;
+    height: 70vh;
     
 }
 .ingredientList header {
     color:  #308D46;
-    font-size: 1.3rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 900;
     text-decoration: underline;
     font-family: "Playwrite AU QLD";
     border-radius: 5px;
 }
 .list {
-    padding: 20px 10px;
+    padding: 20px 20px;
     display: flex;
     flex-direction: column;
-
+    background: red;
     gap: 20px;
-    width: 320px;
+    width: 100%;
     max-height: 250px;
     flex-wrap: wrap;
     line-height: 0.01rem;

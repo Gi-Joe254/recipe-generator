@@ -64,6 +64,7 @@ export default function Chef(){
         recipe && resultsRef.current?.scrollIntoView() 
     },[recipe])
 
+
     const background = {
         position : "absolute",
         inset : "0",
@@ -72,7 +73,6 @@ export default function Chef(){
         backgroundRepeat : 'no-repeat',
         backgroundPosition : 'center',
         opacity : "0.4",
-        
         border: '1px solid black', 
         
         }
