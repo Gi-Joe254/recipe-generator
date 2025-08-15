@@ -11,6 +11,7 @@
     height: 90vh;  
 }
 .chefHero{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,9 +21,9 @@
     font-size: 1.2rem;
     color: #111111;
     height: 100vh;
-    background-image: url("./assets/ingrBg3.avif");
+    background-image: url("./assets/ingrBackground.png");
     background-size: cover;
-    background-position: center;
+    background-position:center;
     background-repeat: no-repeat;
 }
 
@@ -34,6 +35,14 @@
     padding: 60px;
     font-weight: 500;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    
+}
+
+.word2::before {
+    color: transparent;
+    content: "_";
+    height: 5px;
 }
 .heroRight {
     display: flex;
@@ -45,6 +54,10 @@
     font-size: 0.8rem;
     color: #d2691e;
     text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: rgba(254, 254, 255, 0.973);
+    max-width:700px ;
+    margin: 0 auto;
 }
 form {
     display: flex;
@@ -77,61 +90,48 @@ button:hover {
     transform: scale(1.05);
 }
 
-@media (min-width: 420px){
-    .chefHero header{
-        font-size: 4.5rem;
-        max-width: 350px;
-    }
-    .chefHero p{
-        font-size: 0.8rem;
-    }
-}
-@media (min-width: 768px){
-    .chefHero header{
-        font-size: 5rem;
-    }
-}
-@media (min-width: 1024px){
-    .chefHero {
-        flex-direction: row;    
-        padding: 6rem 8rem;
-        gap: 0rem;
-    }
-    .chefHero header{
-        font-size: 7rem;
-        letter-spacing: -1rem;
-        line-height:8rem;
-        padding: 110px;
-        
-    }
-    .heroRight {
-        padding:80px 80px 0 0;   
-  }
-}
-@media (min-width: 1200px){
-    .chefHero {
-        gap: 5rem;
-    }
-    .chefHero header{
-        font-size: 9rem;
-        line-height: 10rem;
-    }
+.fakeFooter {
+    position: absolute;
+    top: 92%;
+    left: 0; 
+    width: 100%;     
+    color: #fef9f4;
     
+    font-size: 0.55rem;
+    font-weight: 300;
+    text-align: center;
 }
+
+.fakeFooter svg {  
+    font-size: 1.3rem;
+    color: #fef9f4;
+    vertical-align: bottom;
+    margin: 0 3px;
+    cursor: pointer;
+    color: #ddd;
+
+    transition: transform 2s ease, color 2s ease;
+}
+
+.fakeFooter svg:hover {
+    transform: scale(1.5);
+
+}
+
+
 .ingredientList {
     background: #fef9f4; 
-    border: 2px solid #d7b899; 
-    border-radius: 12px;
+    
     padding: 1rem;
-    margin: 7rem auto;
+    margin: 7rem auto 0;
     max-width: 600px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    
     min-height: 250px;
 }
 
 .ingredientList header {
     opacity: 0.7;
-    color: #7c4f29; /* dark brown */
+    color: #7c4f29; 
     margin-bottom: 0.8rem;
     font-size: 1.4rem;
     font-weight: 900;
@@ -141,6 +141,10 @@ button:hover {
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5)
 }
 .list {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #d7b899; 
+    border-radius: 12px;
+
     padding: 20px 20px;
     display: flex;    
     gap: 50px;
@@ -165,6 +169,15 @@ button:hover {
 .submitBtn {
     margin: 20px;
 }
+.chefLogo2 {
+    height: 150px;
+}
+.chefLogo2 img{
+    height: 150px;
+    width: 150px;
+    
+}
+
 .results{
     background: #fffaf5;
     font-family: 'Nunito', sans-serif;
@@ -172,7 +185,7 @@ button:hover {
     border: 2px solid #c7a27c;
     border-radius: 12px;
     padding: 1.2rem;
-    margin: 2rem auto;
+    margin: 2rem auto 0;
     max-width: 1000px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5)
 }
@@ -203,5 +216,43 @@ h4 {
 }
 .instructions {
     padding: 30px 0;
+    
+}
+
+
+@media (min-width: 420px){
+    .chefHero header{
+        font-size: 4.5rem;
+        max-width: 350px;
+    }
+    .chefHero p{
+        font-size: 0.8rem;
+    }
+}
+@media (min-width: 768px){
+    .chefHero header{
+        font-size: 5rem;
+    }
+}
+@media (min-width: 1024px){
+    .results {
+        padding-left: 80px;
+    }
+    .chefHero header{
+        font-size: 7rem;
+        padding: 10px;
+        
+    }
+    .chefLogo2 {
+        height: 400px;
+    }
+    .chefLogo2 img{
+        height: 400px;
+        width: 400px;
+    
+    }
+    .word1 {
+    background-color: rgba(254, 254, 255, 0.7);
+    }
     
 }

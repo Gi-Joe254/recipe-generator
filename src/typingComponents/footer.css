@@ -1,0 +1,77 @@
+/* Footer Styling */
+.footer {
+  background-color: #2c2c2c;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 2rem 1rem 1rem;
+  margin-top: 10rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer h2, .footer h4 {
+  margin-bottom: 0.5rem;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ff9800; /* highlight color for chef vibe */
+}
+
+.footer-social a {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #ff9800;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  border-top: 1px solid #444;
+  padding-top: 0.8rem;
+  font-size: 0.8rem;
+  color: #bbb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social {
+    margin-top: 1rem;
+  }
+}
