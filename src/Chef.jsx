@@ -18,13 +18,13 @@ export default function Chef(){
     
     const ingrRef = useRef(null)
     function addIngr(){
-        if (ingr.trim().length > 10 || ingr.length < 3) return;
+        if (ingr.trim().length > 15 || ingr.length < 3) return;
         setIngrList(prev=>([...prev, ingr.trim()]));
         setIngr('')
         setShowFakeFooter(false)
     }
     useEffect (()=> {
-        ingrList.length >=1 && ingrRef.current.scrollIntoView()
+        ingrList && ingrRef.current.scrollIntoView()
     },[ingrList])
 
     const inputRef= useRef(null) 

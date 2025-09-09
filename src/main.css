@@ -4,17 +4,16 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.btn1 {
-  background-color: red;
-}
-.btn2 {
-  background-color: aqua;
+
+  --bg1:  #f7e2d2;
+  --bg2: rgba(247, 226, 199, 0.87);
+  --bg3: #fffaf5;
+  --text1: #7c4f29;
+  --text2: #4a3221;
+  --text3: #d2691e;
 }
